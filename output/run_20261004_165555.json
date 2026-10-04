@@ -1,0 +1,110 @@
+{
+  "run_id": "20261004_165555",
+  "start_time": "2026-10-04 16:55:55",
+  "end_time": "2026-10-04 16:56:06",
+  "status": "PARTIAL_FAILURE",
+  "components": [
+    {
+      "name": "sensor_sim",
+      "status": "FAIL",
+      "readings": 20,
+      "sample_readings": [
+        {
+          "timestamp": 1791125755.629594,
+          "value": 88
+        },
+        {
+          "timestamp": 1791125756.133645,
+          "value": 86
+        },
+        {
+          "timestamp": 1791125756.639043,
+          "value": 85
+        },
+        {
+          "timestamp": 1791125757.1440551,
+          "value": 89
+        },
+        {
+          "timestamp": 1791125757.645647,
+          "value": 89
+        }
+      ],
+      "errors": {
+        "range_errors": [
+          {
+            "value": 201,
+            "timestamp": 1791125758.150825
+          },
+          {
+            "value": 163,
+            "timestamp": 1791125761.164466
+          }
+        ],
+        "interval_errors": []
+      }
+    },
+    {
+      "name": "display_sim",
+      "status": "PASS",
+      "readings": 14,
+      "sample_readings": [
+        {
+          "timestamp": 1791125755.629844,
+          "value": 0.4175384248127816
+        },
+        {
+          "timestamp": 1791125756.13501,
+          "value": 0.9678438002289574
+        },
+        {
+          "timestamp": 1791125756.640289,
+          "value": 0.4531001769915589
+        },
+        {
+          "timestamp": 1791125757.1441479,
+          "value": 0.6573665898910911
+        },
+        {
+          "timestamp": 1791125757.64922,
+          "value": 0.5180924683917519
+        }
+      ],
+      "errors": {
+        "range_errors": [],
+        "interval_errors": []
+      }
+    },
+    {
+      "name": "logger_sim",
+      "status": "PASS",
+      "readings": 20,
+      "sample_readings": [
+        {
+          "timestamp": 1791125755.6298099,
+          "entries_written": 0
+        },
+        {
+          "timestamp": 1791125756.134923,
+          "entries_written": 1
+        },
+        {
+          "timestamp": 1791125756.6390452,
+          "entries_written": 2
+        },
+        {
+          "timestamp": 1791125757.144137,
+          "entries_written": 3
+        },
+        {
+          "timestamp": 1791125757.644753,
+          "entries_written": 4
+        }
+      ],
+      "errors": {
+        "range_errors": [],
+        "interval_errors": []
+      }
+    }
+  ]
+}

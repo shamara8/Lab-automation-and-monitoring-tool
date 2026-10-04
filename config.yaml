@@ -1,0 +1,24 @@
+run:
+  output_dir: output/
+  duration: 10                          #seconds
+
+components:
+  - name: sensor_sim
+    script: components/sensor_sim.py
+    interval_expected: 0.5              #seconds
+    intervals_max_missed: 3             #how many missed before flagged as failed
+    value_range: [0, 100]               #readings outside this range are flagged
+  
+  - name: display_sim
+    script: components/display_sim.py
+    interval_expected: 0.5              #seconds
+    intervals_max_missed: 3             #how many missed before flagged as failed
+    value_range: null                   #no numeric check for display_sim
+    
+  - name: logger_sim
+    script: components/logger_sim.py
+    interval_expected: 0.5              #seconds
+    intervals_max_missed: 3             #how many missed before flagged as failed
+    value_range: null                   #no numeric check for logger_sim
+    start_before: ["sensor_sim"]        #logger_sim must start before sensor_sim
+    
